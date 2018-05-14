@@ -1,0 +1,10 @@
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\bin\Debug\DinnerParty (fixed).exe.config
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\bin\Debug\DinnerParty (fixed).exe
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\bin\Debug\DinnerParty (fixed).pdb
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\obj\Debug\DinnerParty (fixed).csprojResolveAssemblyReference.cache
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\obj\Debug\DinnerParty__fixed_.Form1.resources
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\obj\Debug\DinnerParty__fixed_.Properties.Resources.resources
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\obj\Debug\DinnerParty (fixed).csproj.GenerateResource.cache
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\obj\Debug\DinnerParty (fixed).csproj.CoreCompileInputs.cache
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\obj\Debug\DinnerParty (fixed).exe
+C:\Users\rdijk\Documents\Programmeren\DinerParty\DinnerParty (fixed)\DinnerParty (fixed)\obj\Debug\DinnerParty (fixed).pdb

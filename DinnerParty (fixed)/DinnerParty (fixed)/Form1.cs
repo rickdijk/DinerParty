@@ -67,5 +67,12 @@ namespace DinnerParty__fixed_
             birthdayParty.CakeWriting = cakeWriting.Text;
             DisplayBirthdayPartyCost();
         }
+
+        private void DisplayBirthdayPartyCost()
+        {
+            tooLongLabel.Visible = birthdayParty.CakeWritingTooLong;
+            decimal cost = birthdayParty.Cost;
+            BirthdayCost.Text = cost.ToString("c");
+        }
     }
 }
