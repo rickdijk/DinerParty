@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace DinnerParty__fixed_
 {
-    class BirthdayParty
+    class BirthdayParty : Party
     {
-        public const int CostOfFoodPerPerson = 25;
-        public int NumberOfPeople { get; set; }
-        public bool FancyDecorations { get; set; }
         public string CakeWriting { get; set; }
         
         //constructor
-        public BirthdayParty(int numberOfPeople, bool fancyDecorations, string cakeWriting)
+        public BirthdayParty(string cakeWriting, int numberOfPeople, bool fancyDecorations)
         {
+            CakeWriting = cakeWriting;
             NumberOfPeople = numberOfPeople;
             FancyDecorations = fancyDecorations;
-            CakeWriting = cakeWriting;
         }
 
         private int ActualLength

@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 
 namespace DinnerParty__fixed_
 {
-    class DinnerParty
+    class DinnerParty : Party
     {
-        public const int CostOfFoodPerPerson = 25;
-
-        public int NumberOfPeople { get; set; }
-
-        public bool FancyDecorations { get; set; }
-
         public bool HealthyOption { get; set; }
 
-        public DinnerParty(int numberOfPeople, bool healthyOption, bool fancyDecorations)
+        public DinnerParty(bool healthyOption, int numberOfPeople, bool fancyDecorations)
         {
+            HealthyOption = healthyOption;
             NumberOfPeople = numberOfPeople;
             FancyDecorations = fancyDecorations;
-            HealthyOption = healthyOption;
         }
 
         private decimal CalculateCostOfDecorations()
