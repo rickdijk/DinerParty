@@ -11,24 +11,26 @@ namespace DinnerParty__fixed_
         public bool HealthyOption { get; set; }
 
         public DinnerParty(bool healthyOption, int numberOfPeople, bool fancyDecorations)
+            : base (numberOfPeople, fancyDecorations)
         {
             HealthyOption = healthyOption;
             NumberOfPeople = numberOfPeople;
             FancyDecorations = fancyDecorations;
         }
 
-        private decimal CalculateCostOfDecorations()
+        override public decimal Cost
         {
-            decimal costOfDecorations;
-            if (FancyDecorations)
+            get
             {
-                costOfDecorations = (NumberOfPeople * 15.00M) + 50M;
+                decimal totalCost = base.Cost;
+                totalCost += ((CalculateCostOfBeveragesPerPerson()
+                                      + CostOfFoodPerPerson) * NumberOfPeople);
+                if (HealthyOption)
+                {
+                    totalCost *= .95M;
+                }
+                return totalCost;
             }
-            else
-            {
-                costOfDecorations = (NumberOfPeople * 7.50M) + 30M;
-            }
-            return costOfDecorations;
         }
 
         private decimal CalculateCostOfBeveragesPerPerson()
@@ -43,21 +45,6 @@ namespace DinnerParty__fixed_
                 costOfBeveragesPerPerson = 20.00M;
             }
             return costOfBeveragesPerPerson;
-        }
-
-        public decimal Cost
-        {
-            get
-            {
-                decimal totalCost = CalculateCostOfDecorations();
-                totalCost += ((CalculateCostOfBeveragesPerPerson()
-                                      + CostOfFoodPerPerson) * NumberOfPeople);
-                if (HealthyOption)
-                {
-                    totalCost *= .95M;
-                }
-                return totalCost;
-            }
         }
     }
 }

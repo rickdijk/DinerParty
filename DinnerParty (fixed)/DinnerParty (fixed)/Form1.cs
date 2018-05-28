@@ -18,10 +18,10 @@ namespace DinnerParty__fixed_
         public Form1()
         {
             InitializeComponent();
-            dinnerParty = new DinnerParty((int)numericUpDown1.Value, healthyBox.Checked, fancyBox.Checked);
+            dinnerParty = new DinnerParty(healthyBox.Checked, (int)numericUpDown1.Value, fancyBox.Checked);
             DisplayDinnerPartyCost();
 
-            birthdayParty = new BirthdayParty((int)numberBirthdayParty.Value, fancyBirthday.Checked, cakeWriting.Text);
+            birthdayParty = new BirthdayParty(cakeWriting.Text, (int)numberBirthdayParty.Value, fancyBirthday.Checked);
             DisplayBirthdayPartyCost();
         }
 
