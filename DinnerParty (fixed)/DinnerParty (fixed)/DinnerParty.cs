@@ -11,7 +11,6 @@ namespace DinnerParty__fixed_
         public bool HealthyOption { get; set; }
 
         public DinnerParty(bool healthyOption, int numberOfPeople, bool fancyDecorations)
-            : base (numberOfPeople, fancyDecorations)
         {
             HealthyOption = healthyOption;
             NumberOfPeople = numberOfPeople;

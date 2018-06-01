@@ -12,12 +12,6 @@ namespace DinnerParty__fixed_
         public int NumberOfPeople { get; set; }
         public bool FancyDecorations { get; set; }
 
-        public Party(int numberOfPeople, bool fancyDecorations)
-        {
-            NumberOfPeople = numberOfPeople;
-            FancyDecorations = fancyDecorations;
-        }
-
         virtual public decimal Cost
         {
             get

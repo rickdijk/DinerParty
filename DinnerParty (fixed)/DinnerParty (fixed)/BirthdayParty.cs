@@ -11,8 +11,7 @@ namespace DinnerParty__fixed_
         public string CakeWriting { get; set; }
         
         //constructor
-        public BirthdayParty(string cakeWriting, int numberOfPeople, bool fancyDecorations)
-            : base(numberOfPeople, fancyDecorations)
+        public BirthdayParty (int numberOfPeople, bool fancyDecorations, string cakeWriting)
         {
             CakeWriting = cakeWriting;
             NumberOfPeople = numberOfPeople;
